@@ -1,123 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript Variables & Operators Assignment</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
-  header { background: #111827; color: white; padding: 24px; text-align: center; }
-  main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
-  section { background: white; padding: 20px; margin-bottom: 18px; border-radius: 12px; box-shadow: 0 2px 8px #0001; }
-  h2 { margin-top: 0; }
-  button { padding: 10px 16px; border: 0; border-radius: 8px; background: #2563eb; color: white; cursor: pointer; }
-  button:hover { background: #1d4ed8; }
-  .output { margin-top: 12px; padding: 12px; background: #eef2ff; border-radius: 8px; white-space: pre-line; }
-  input { padding: 9px; width: 100px; margin: 4px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
 </head>
 <body>
-<header>
-  <h1>Variables, Data Types & Operators</h1>
-  <p>JavaScript Assignment Demonstration</p>
-</header>
+    <h1>JavaScript Variables & Operators</h1>
+    <p>Open your browser's Developer Tools (F12) and check the Console tab to see the output.</p>
 
-<main>
-<section>
-  <h2>1. Personal Info Program</h2>
-  <button onclick="personalInfo()">Run</button>
-  <div id="personal" class="output"></div>
-</section>
-
-<section>
-  <h2>2. Temperature Converter</h2>
-  <input id="celsius" type="number" value="30"> °C
-  <button onclick="convertTemp()">Convert</button>
-  <div id="temperature" class="output"></div>
-</section>
-
-<section>
-  <h2>3. Rectangle Area & Perimeter</h2>
-  <input id="length" type="number" value="10" placeholder="Length">
-  <input id="width" type="number" value="5" placeholder="Width">
-  <button onclick="rectangle()">Calculate</button>
-  <div id="rectangle" class="output"></div>
-</section>
-
-<section>
-  <h2>4. Grade Average Calculator</h2>
-  <input id="score1" type="number" value="80">
-  <input id="score2" type="number" value="75">
-  <input id="score3" type="number" value="90">
-  <button onclick="average()">Calculate</button>
-  <div id="average" class="output"></div>
-</section>
-
-<section>
-  <h2>5. True or False Practice</h2>
-  <button onclick="comparisons()">Run Comparisons</button>
-  <div id="comparisons" class="output"></div>
-</section>
-
-<section>
-  <h2>6. Data Type Identifier</h2>
-  <button onclick="dataTypes()">Identify Types</button>
-  <div id="types" class="output"></div>
-</section>
-</main>
-
-<script>
-function personalInfo() {
-  let name = "Divine";
-  let age = 20;
-  let city = "Benin City";
-  let hobby = "Video Editing";
-  document.getElementById("personal").textContent =
-    `My name is ${name}, I am ${age} years old, I live in ${city}, and my favorite hobby is ${hobby}.`;
-}
-
-function convertTemp() {
-  let celsius = Number(document.getElementById("celsius").value);
-  let fahrenheit = (celsius * 9 / 5) + 32;
-  document.getElementById("temperature").textContent =
-    `${celsius}°C is equal to ${fahrenheit}°F.`;
-}
-
-function rectangle() {
-  let length = Number(document.getElementById("length").value);
-  let width = Number(document.getElementById("width").value);
-  let area = length * width;
-  let perimeter = 2 * (length + width);
-  document.getElementById("rectangle").textContent =
-    `Area: ${area}\\nPerimeter: ${perimeter}`;
-}
-
-function average() {
-  let score1 = Number(document.getElementById("score1").value);
-  let score2 = Number(document.getElementById("score2").value);
-  let score3 = Number(document.getElementById("score3").value);
-  let avg = (score1 + score2 + score3) / 3;
-  document.getElementById("average").textContent = `Average score: ${avg}`;
-}
-
-function comparisons() {
-  let age = 20;
-  let hasLicense = true;
-  let score = 75;
-  document.getElementById("comparisons").textContent =
-    `age >= 18 → ${age >= 18}\\nhasLicense === true → ${hasLicense === true}\\nscore >= 50 → ${score >= 50}\\nage < 18 → ${age < 18}`;
-}
-
-function dataTypes() {
-  let number = 25;
-  let text = "Hello";
-  let isStudent = true;
-  let fruits = ["Apple", "Mango", "Orange"];
-  let person = { name: "Divine", age: 20 };
-
-  document.getElementById("types").textContent =
-    `number → ${typeof number}\\nstring → ${typeof text}\\nboolean → ${typeof isStudent}\\narray → ${typeof fruits} (JavaScript reports arrays as objects)\\nobject → ${typeof person}`;
-}
-</script>
+    <!-- Link each separate JS file here -->
+    <script src="task1.js"></script>
+    <script src="task2.js"></script>
+    <script src="task3.js"></script>
+    <script src="task4.js"></script>
+    <script src="task5.js"></script>
+    <script src="task6.js"></script>
 </body>
 </html>
